@@ -1,0 +1,4 @@
+before_install:
+ - sudo apt-get install -qq open-cobol
+language: cpp
+script: cobc -free -x -o hello hello.cbl && ./hello
